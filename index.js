@@ -2,7 +2,7 @@ import { Tenderly, Network } from '@tenderly/sdk';
 
 
 const libraryTokenContract =
-  '0x56AEE36ECc39e8eC258d36c39c504D12A6EA2091'.toLowerCase();
+  '0x554FAe0af99244BE94668611539412AC4c4C43d6'.toLowerCase();
 
 (async () => {
   try {
@@ -31,7 +31,9 @@ const libraryTokenContract =
           "optimizer": {
             "enabled": true,
             "runs": 20000
-          }
+          },
+          //FIXME This is NOT available via the SDK
+          // "viaIR": true,
         }
       }
     });
