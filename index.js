@@ -21,16 +21,20 @@ const libraryTokenContract =
         "version": "v0.8.18",
         "sources": {
           "contracts/NamedCounter.sol": {
-            "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.18;\n\nimport {CounterWithLogs} from \"Counter/Counter.sol\";\n\ncontract NamedCounter is CounterWithLogs {\n  string public name;\n\n  function setName(string memory _name) public {\n    name = _name;\n  }\n}\n"
+            "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.18;\n\nimport {CounterWithLogs} from \"remap-me/Counter/Counter.sol\";\n\ncontract NamedCounter is CounterWithLogs {\n  string public name;\n\n  function setName(string memory _name) public {\n    name = _name;\n  }\n}\n"
           },
-          "Counter/Counter.sol": {
+          "remapped/Counter/Counter.sol": {
             "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.18;\ncontract CounterWithLogs {\n  uint public count;\n  event CounterChanged(\n    string method,\n    uint256 oldNumber,\n    uint256 newNumber,\n    address caller\n  );\n  // Function to get the current count\n  function get() public view returns (uint) {\n    return count;\n  }\n  // Function to increment count by 1\n  function inc() public {\n    emit CounterChanged(\"Increment\", count, count + 1, msg.sender);\n    count += 1;\n  }\n  // Function to decrement count by 1\n  function dec() public {\n    emit CounterChanged(\"Decrement\", count, count - 1, msg.sender);\n    count -= 1;\n  }\n}\n"
           }
         },
         "settings": {
           "optimizer": {
             "enabled": true,
-            "runs": 20000
+            "runs": 20000,
+            // Not supported
+            // "remappings": [
+            //   "remap-me/Counter/=remapped/Counter/"
+            // ],
           }
         }
       }

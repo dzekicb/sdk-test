@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-foundry");
 
 const tdly = require("@tenderly/hardhat-tenderly");
 tdly.setup();
