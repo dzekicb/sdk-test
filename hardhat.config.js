@@ -1,4 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-foundry");
 
 const tdly = require("@tenderly/hardhat-tenderly");
 tdly.setup();
@@ -8,6 +9,7 @@ module.exports = {
   solidity: {
     version: '0.8.18',
     settings: {
+      viaIR: true,
       optimizer: {
         enabled: true,
         runs: 20000,

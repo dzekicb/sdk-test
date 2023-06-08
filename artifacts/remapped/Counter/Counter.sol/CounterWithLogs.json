@@ -1,0 +1,82 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CounterWithLogs",
+  "sourceName": "remapped/Counter/Counter.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "method",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "oldNumber",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newNumber",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "caller",
+          "type": "address"
+        }
+      ],
+      "name": "CounterChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "count",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dec",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "inc",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608080604052346100165761029b908161001c8239f35b600080fdfe60806040818152600436101561001457600080fd5b600091823560e01c90816306661abd1461022d57508063371303c0146101825780636d4ce63c146101485763b3bcfa821461004e57600080fd5b3461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126101445781547fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff810191818311610117577fc5802a3758d71d4ea2b77079fad7b332621c089586b2fd70ec9b7e75761a8def91838260c093519260808452600960808501527f44656372656d656e74000000000000000000000000000000000000000000000060a08501526020840152820152336060820152a1815580f35b6024847f4e487b710000000000000000000000000000000000000000000000000000000081526011600452fd5b5080fd5b503461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc36011261014457602091549051908152f35b503461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126101445781546001810191828211610117577fc5802a3758d71d4ea2b77079fad7b332621c089586b2fd70ec9b7e75761a8def91838260c093519260808452600960808501527f496e6372656d656e74000000000000000000000000000000000000000000000060a08501526020840152820152336060820152a1815580f35b83903461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc36011261014457602091548152f3fea26469706673582212209b6fdde639a7a818bdb73a4950f5adc13a572da419836cd53480cb86dbce8e6b64736f6c63430008120033",
+  "deployedBytecode": "0x60806040818152600436101561001457600080fd5b600091823560e01c90816306661abd1461022d57508063371303c0146101825780636d4ce63c146101485763b3bcfa821461004e57600080fd5b3461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126101445781547fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff810191818311610117577fc5802a3758d71d4ea2b77079fad7b332621c089586b2fd70ec9b7e75761a8def91838260c093519260808452600960808501527f44656372656d656e74000000000000000000000000000000000000000000000060a08501526020840152820152336060820152a1815580f35b6024847f4e487b710000000000000000000000000000000000000000000000000000000081526011600452fd5b5080fd5b503461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc36011261014457602091549051908152f35b503461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126101445781546001810191828211610117577fc5802a3758d71d4ea2b77079fad7b332621c089586b2fd70ec9b7e75761a8def91838260c093519260808452600960808501527f496e6372656d656e74000000000000000000000000000000000000000000000060a08501526020840152820152336060820152a1815580f35b83903461014457817ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc36011261014457602091548152f3fea26469706673582212209b6fdde639a7a818bdb73a4950f5adc13a572da419836cd53480cb86dbce8e6b64736f6c63430008120033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
